@@ -1,0 +1,79 @@
+.hero-section {
+  background-image: url("https://ohioalabi.github.io/Ohio/dough1.jpg");
+    /*background-image: url("/storage/emulated/0/Web coding/Lizzy's Unique Palate/Files/img/dough1.jpg");
+   */ background-size: cover;
+    background-position: center;
+    height: 490px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  margin-bottom: 15%;
+}
+.imgText {
+  font-size: 3rem;
+  color: whitesmoke
+}
+
+.welcomeCont {
+  margin-bottom: 10%
+}
+#welcomeText {
+  margin-bottom: 20%;
+  color: dimgray;
+}
+
+.hds {
+  font-size: 3rem;
+  color: #444
+}
+.learnM {
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-color: midnightblue;
+  color: midnightblue;
+  position: relative;
+  z-index: -1
+}
+#learnM3 {
+  padding: 28px 75px;
+}
+.learnMText{
+  left: 4%;
+  bottom: 30%;
+  position: absolute
+}
+.forwd {
+  position: absolute;
+  right: 2%;
+  bottom: 19%;
+  font-size: 2.1rem
+}
+
+.textCont {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: -3
+}
+.textInfo {
+  animation: swipeIn 1s forwards
+}
+/*@keyframes swipeIn {
+  from {transform: translateX(-35%)}
+  to {transform: translateX(0)}
+}*/
+.imgz {
+  border-radius: 90px
+}
+.foodImg {
+  margin-bottom: 5%;
+}
+
+
+
+
