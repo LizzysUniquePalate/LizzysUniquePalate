@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Goudy+Bookletter+1911&family=Ma+Shan+Zheng&family=Pacifico&display=swap');
+
+.goudy-bookletter-1911-regular {
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.arapey-regular {
+  font-family: "Arapey", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+.fraunces-sty {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+
+.cormorant-sty1 {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.pacifico-regular {
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.scroll-animation {
+  opacity: 0
+}
+
+
+
+
+
+
+
+
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 0px 2px #000;
+  width: 100vw;
+  z-index: 0
+}
+#brNm {
+  color: rgb(90%,8%,11%);
+  font-size: 1.2rem
+}
+#brBo {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: rgb(5%,15%,53%)
+}
+.butOne {
+  border-radius: 15px;
+  padding: 10% 25%;
+  margin-top: 2%;
+  border-color: midnightblue
+}
+.mnButCell {
+  position: fixed;
+  right: 0;
+  z-index: 105
+}
+
+
+
+html {
+  font-size: 100%;
+}
+
+
+body {
+  
+}
+.overlayGrid {
+  display: none
+}
+.overlayGrid {
+  background-color: rgba(0,0,0,0.3);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100
+}
+.overlayGrid.active {
+  display: block
+}
+.alrtTextCont {
+  height: 50px;
+  position: absolute;
+  top: 27px;
+  box-shadow: 0px 2px 2px lightgray
+}
+#alertT {
+  font-weight: 500
+}
+.clBut {
+  position: absolute;
+  bottom: -10%;
+  left: 20px;
+  padding: 12px 40%;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1.1rem
+}
+.clBut:active {
+  border-radius: 25px
+}
+.shMsg {
+  background-color: white;
+  border-radius: 25px;
+  height: 125px;
+  position: relative;
+}
+
+
+.overlayGrid.active {
+    display: block;
+    animation: showAl 0.5s ease
+}
+
+.overlayGrid.undo {
+   display: block;
+   animation: hideAl 0.5s ease;
+   animation-fill-mode: forwards;
+}
+
+ @keyframes showAl {
+     from {
+         opacity: 0;
+         transform: translateY(-20%);
+     }
+     to {
+         opacity: 1;
+         transform: translateY(3%);
+     }
+ }
+
+  @keyframes hideAl {
+  from {
+    opacity: 1;
+    transform: translateY(3%);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (min-height: 1020px) {
+    .shMsg {
+        height: 40vh;
+    }
+} 
+
+@media (orientation: landscape) {
+  
+    .shMsg {
+        height: 40vh;
+    }
+  #brBo {
+    font-size: 2.2rem
+  }
+  #brNm {
+    font-size: 2rem
+  }
+  #subMeNm {
+  font-size: 3rem
+}
+  .mnIc {
+    margin-top: 3%;
+    margin-left: 5%
+  }
+  .menuLogo {
+    font-size: 3rem;
+    margin-top: 2%
+  }
+  .menuLists li {
+    margin-top: 2%
+  }
+  
+} 
+
+
+
+.menuLay {
+  background-color: rgba(0,0,0,0.3);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.menuLay.active {
+  display: block;
+  opacity: 1;
+}
+
+.menuLay.closing {
+  opacity: 0;
+}
+
+.me_nu {
+  position: fixed;
+  width: 75vw;
+  top: 0%;
+  left: 0%;
+  z-index: 50;
+  transform: translateX(-70%);
+  transition: transform 0.5s ease;
+}
+.menuItems {
+  overflow-y: auto;
+  height: 50vh;
+}
+
+.me_nu.active {
+  transform: translateX(0%);
+}
+
+.me_nu.closing {
+  transform: translateX(-70%);
+}
+
+.menuGrid {
+  background-color: whitesmoke;
+  height: 100vh;
+}
+
+
+/* Style for the menu icon */
+span#menuIc {
+  font-size: 25px; /* Larger font size for better visibility */
+  color: midnightblue; /* Initial color */
+  transition: transform 1s ease, color 0.5s ease, opacity 0.5s ease; /* Smooth transition for transform, color, and opacity */
+  display: inline-block; /* Ensure the span behaves like a block for transformation */
+  transform-origin: center; /* Make the rotation center-based */
+  opacity: 1; /* Full opacity initially */
+}
+
+/* Hover effect */
+span#menuIc:hover {
+  cursor: pointer; /* Indicate it's clickable */
+  transform: scale(1.1); /* Slightly scale up for a hover effect */
+  font-weight: 700
+}
+
+/* Active effect for rotation when clicked */
+span#menuIc:active {
+  transform: rotate(360deg); /* Rotate 360 degrees on click */
+  color: black; /* Change color when active */
+  opacity: 0.8; /* Slight opacity change when active */
+}
+
+/* Transition for when icon is changed */
+span#menuIc.change {
+  animation: fadeInOut 0.3s ease-in-out forwards; /* Custom animation to fade out and fade in */
+}
+
+/* Keyframe animation for fading in/out icons */
+@keyframes fadeInOut {
+  0% {
+    transform: rotate(10deg); /* Start fading out */
+  }
+  50% {
+    transform: rotate(45deg); /* Stay hidden in middle */
+  }
+  100% {
+    transform: rotate(90deg); /* Fade back in */
+  }
+}
+
+.menuLogo {
+  margin-left: -5%;
+  height: 5vh;
+ margin-top: 7%
+}
+/*.mnIc {
+  margin-top: 6%
+}*/
+.menuLogoNm {
+  color: rgb(5%,15%,53%)
+}
+#subMeNm {
+ color: rgb(90%,8%,11%);
+  font-size: 1rem
+}
+.mnHead {
+  margin-top: 5%
+}
+
+.menuLists li {
+  margin-top: 15%
+}
+.menuLists li {
+  color: midnightblue;
+  font-weight: 700
+}
+.menuLists li a:active {
+  color: cadetblue;
+  font-weight: 800;
+}
+.menuLists li a:hover {
+  color: blue;
+  font-weight: 800;
+}
+/*.menuLists li a:visited {
+  color: purple;
+}*/
+
+.dynaCont {
+  margin-top: 30%
+}
+
+
+
+
+/* LOADING SCREEN
+
+/* Overlay to cover the screen */
+.spinner-overlay {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    width: 90px;
+    height: 70px;
+  border-radius: 20px;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 300;
+}
+.dark-mode .spinner-overlay {
+    background: #333;
+}
+
+.dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dots span {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    animation: pulse 1s infinite ease-in-out;
+}
+
+.dots span:nth-child(1) {
+    animation-delay: 0s; 
+    background: mediumblue;
+}
+.dots span:nth-child(2) {
+    animation-delay: 0.2s;
+		  background-color: lightgray;
+}
+.dots span:nth-child(3) {
+    animation-delay: 0.4s; 
+    background: mediumblue;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.5); }
+}
+
+
+
+
+footer {
+  margin-top: 15%;
+  background-color: tan;
+  color: whitesmoke;
+  margin-bottom: -7%
+}
+#footMnHead {
+  margin-bottom: 10%
+}
+.footLinks {
+  margin-top: 10%;
+  margin-bottom: 10%
+}
+.contactHead {
+  font-size: 2.5rem;
+  font-weight: 700
+}
+.nos {
+  font-size: 18px;
+  color: whitesmoke
+}
+
+.contactAppIc {
+  font-size: 1.5rem;
+  color: midnightblue;
+}
+
+
+
+
+
