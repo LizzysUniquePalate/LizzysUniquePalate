@@ -1,0 +1,26 @@
+.fback {
+  height: 100vh
+}
+.fNo {
+  font-size: 4rem;
+  color: midnightblue
+}
+.fText {
+   font-size: 3rem;
+  color: midnightblue
+}
+.fHome {
+  font-weight: 800;
+  border-radius: 20px;
+  background-color: midnightblue;
+  padding: 20px 40px
+}
+.fHome:active {
+  background-color: black;
+}
+.fHome:hover {
+  background-color: darkslateblue
+}
+
+
+
