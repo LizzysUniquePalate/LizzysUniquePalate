@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Get Access To Catering Services">
+    <meta name="author" content="Ohio">
+    <title>Lizzy's Unique Palate</title>
+		
+	  	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites/dist/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">       
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/2.0.3/motion-ui.min.css">
+
+ 		
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="styles/home.css"/>
+
+    
+		
+	 	<link rel="preconnect" href="https://fonts.gstatic.com">		
+	 	<link rel="icon" href="ic.png" type="image/x-icon">
+
+ <script src="scripts/script.js" defer></script>
+ <script src="scripts/analytics.js" defer></script>
+ 
+    <style>
+    .speTexts {
+        position: absolute;
+        z-index: -3;
+        margin-left: -8%
+    }
+    .service-img {
+        margin-top: 8%
+    }
+    </style>
+      
+   </head>
+<body>
+    
+    <header>
+        
+        <div class="grid-container">
+           <div class="grid-x">
+               <div class="cell small-2 medium-1 large-2" onclick= window.location.href="index.html">
+                 <img src="Files/img/ic.png" alt="Lizzy's Unique Palate Logo" class="responsive-img">
+               </div>
+             <div class="cell small-8 medium-9 large-8 align-center-middle" onclick= window.location.href="index.html">
+               <h1 id="brNm" class="pacifico-regular"><b class="fraunces-sty" id="brBo">LIZZY'S</b> Unique Palate</h1>
+                 </div>
+                <div class="cell small-2 medium-2 large-2 align-center-middle mnButCell">
+              <button class="button hollow butOne" id="mnBut" aria-label="menu" aria-expanded="false">
+           <span class="material-symbols-outlined menu" id="menuIc">&#xe5d2</span>
+        </button>
+      </div>
+  </div>
+</div>
+              
+            </header>
+        
+    <main>
+        
+      <div class="menuLay">
+         <div class="grid-container full me_nu">
+           <div class="grid-x grid-padding-x menuGrid">
+               
+               <div class="grid-x grid-padding-x mnHead">
+              					 <div class="cell small-3 medium-3 large-3 medium-offset-2 mnIc">
+                						 <img src="Files/img/ic.png" alt="Lizzy's Logo" class="responsive-img">
+              												 </div>
+          												     <div class="cell small-9 medium-9 large-9 menuLogo">
+                  				 <h4 class="menuLogoNm fraunces-sty text-bottom">LIZZY'S <span class="pacifico-regular" id="subMeNm">Unique Palate</span> </h4>
+              						 </div>
+               			</div>
+               
+               <div class="cell text-center small-12 medium-12 large-12 menuItems">
+                   <ul class="no-bullet menuLists grid-x">
+                       <li class="cell medium-6 large-6" data-value="mL1" id="headHmLnk">HOME</a></li>
+                       <li class="cell medium-6 large-6" data-value="mL2" id="headAbtLnk">ABOUT</li>
+                       <li class="cell medium-6 large-6"><a href="gallery.html">GALLERY</a></li>
+                       <li class="cell medium-6 large-6" data-value="mL4">CONTACT</li>
+                   </ul>
+                  </div>               
+       	  </div>
+       	</div>
+     </div>
+        
+                
+                     
+        <!-- MESSAGES -->
+        <div class="grid-x grid-padding-x align-center-middle overlayGrid" id="overlayerGrid">
+        <div class="grid small-10 medium-6 large-6 small-offset-1 medium-offset-3 large-offset-4 text-center shMsg">            
+            <div class="cell alrtTextCont text-center">
+                <p id="alertT">Notification</p>
+            </div>            
+                <button class="button clear align-bottom clBut" id="ok">OK</button>
+                                  
+        </div>
+        </div>
+        
+<!-- LOADING SCREEN -->
+ <div class="spinner-overlay" id="loadLay">
+    <div class="dots">
+        <span></span><span></span><span></span>
+    </div>
+</div>
+</div>
+
+
+ <div class="revealCt medium-12" id="contactModal" data-reveal data-animation-in="slide-in-left" data-animation-out="slide-out-left">
+     
+       <div class="cell">
+     <h1 class="text-center goudy-bookletter-1911-regular ctHi">Contact Us</h1>
+     </div>
+    
+     <div class="grid-container modal-content align-center-middle text-center">
+         
+                
+         <div class="grid-x align-center-middle text-center ctMsgCont">
+             <div class="cell small-12 ctMsg">
+                 <h2 class="ctHii">Message Us</h2>
+            <a href="https://wa.me/+2348130809201" class="cell shrink contactAppIc" target="_blank" aria-label="Message us on whatsapp"><i class="fab fa-whatsapp" id="ctWhatsapp"></i> <span class="ctNos">08130809201</span></a>                 
+            		 <div class="cell small-12 align-center-middle text-center ctMail">                
+  																		<a href="mailto:enudolizzy@gmail.com" class="align-center-middle gmail-button" aria-label="Send a message on Gmail">
+   														     <i class="fas fa-envelope" id="ctMails"></i> <span>enudolizzy@gmail.com</span>
+																				    </a>
+																										</div>
+             </div>
+             
+               <div class="cell ctMsg">
+             <h2 class="ctHii">Call Us</h2>
+             <p>
+                 <div class="cell">
+            									<a href="tel:+234 813 080 9201" class="cell shrink contactAppIc" aria-label="Call us on 08130809201"><i class="fas fa-phone" id="ctPhone"></i> <span class="ctNos">08130809201</span></a>
+       											   </div> 
+             </p>
+         </div>
+             
+                          
+             <div class="cell small-12 ctMsg">
+                 <h2 class="ctHii">Follow Us</h2>
+                 <a href="https://vm.tiktok.com/ZMkGP4MXE/" class="cell shrink ctAppIc" target="_blank" aria-label="Follow us on tiktok" id="ctAppIci"><i class="fab fa-tiktok" id="ctTiktok"></i> @cheflizzy0</a><br>
+                 <a href="https://www.instagram.com/chef_lizzy_?igsh=MW11NHJkc3lxcGNqeg==" class="cell shrink ctAppIc" target="_blank" id="ctAppIcii" aria-label="Follow us on instagram"><i class="fab fa-instagram" id="ctInstagram"></i> chef_lizzy_</a>
+             </div>
+         </div>
+         
+     </div>
+    <button class="close-button" data-close>
+        <span class="material-symbols-outlined ctClrIc" id="ctClearIc">&#xe5cd</span>
+    </button>
+</div>
+
+
+
+
+        <div class="dynaCont">
+            <!--
+            <div class="hero-section">
+                <h1 class="arapey-regular imgText">Simply Unique</h1>
+                  </div>
+            
+            <div class="grid-container">                
+                <div class="grid-x">  
+                    
+                    <div class="cell small-12 align-center-middle text-center welcomeCont animated slide-in-left">
+                        <p class="cormorant-sty1" id="welcomeText">WELCOME TO LIZZY'S UNIQUE PALATE</p>
+                        <h1 class="arapey-regular hds">Remarkable Catering & Delicacies</h1>
+                    </div>
+                    
+                    -->
+                    
+      
+
+
+                    
+                    
+                                     
+                    <!-- \\\\\\\\//////////// -->
+                    <!--            <div class="cell small-10 small-offset-1 textCont scroll-animation">
+                <p class="textInfo">
+                     Lizzy's Unique Palate is a culinary experience like no other. We believe that every meal should be an adventure for the senses, a journey to the heart of culinary creativity. Our dishes are carefully crafted to tantalize your taste buds and satisfy your cravings, using only the freshest, most flavorful ingredients. At Lizzy's Unique Palate, we are committed to providing our customers with an unforgettable dining experience that celebrates the joy and artistry of food. Join us on this delicious journey and let us share our passion for flavor with you.
+                </p>
+              </div>
+   <div class="cell small-12 align-center-middle text-center learMCont">                
+    <button class="button align-center-middle learnM" id="learnM1" aria-label="Learn more button">
+        <i class="fas fa-info-circle"></i> Learn More
+    </button>
+</div>                        
+             <h2 class="cell small-11 align-center-middle text-center arapey-regular hds">Deliciously Crafted, Made With Love!</h2>
+                <div class="cell small-10  small-offset-1 textCont scroll-animation">
+              <p class="textInfo">Indulge in freshly made pastries, cakes, and a rich blend of African and continental dishes. Whether it's for a special occasion or a casual treat, we've got you covered!</p>
+           </div>
+                    
+                 <div class="cell small-12 align-center-middle text-center learMCont">
+   										 <button class="button learnM" id="learnM2" data-open="contactModal" aria-label="Order now button">
+        <i class="fas fa-utensils"></i> Order Now
+    </button>                                                     
+</div>
+                    
+                   
+              </div>            
+            </div>
+            
+        
+    
+        <div class="grid-container">
+    
+    <div class="grid-x grid-margin-x small-up-10 medium-up-3 large-up-3  align-center">
+        <div class="cell small-8 foodImg">
+            <img src="Files/img/cake3~2.jpg" alt="Gallery Image" class="responsive-img imgz">
+              </div>
+        <div class="cell small-8 foodImg">
+            <img src="https://alabiohio.github.io/LizzysUniquePalate/Files/img/spaghetti2.jpg" alt="Gallery Image" class="responsive-img lazyload imgz">
+        </div>
+        <div class="cell small-8 foodImg">
+            <img src="Files/img/rice1.jpg" alt="Gallery Image" class="responsive-img imgz">
+        </div>
+        <div class="cell small-8 foodImg">
+           <img src="https://alabiohio.github.io/LizzysUniquePalate/Files/img/chicken1.jpg" alt="Gallery Image" class="responsive-img lazyload imgz">
+        </div>
+        <div class="cell small-8 foodImg">
+           <img src="https://alabiohio.github.io/LizzysUniquePalate/Files/img/cake5.jpg" alt="Gallery Image" class="responsive-img lazyload imgz">
+        </div>
+        <div class="cell small-8 foodImg hide-for-small-only">
+            <img src="Files/img/dough1.jpg" alt="Gallery Image" class="responsive-img imgz">
+        </div>
+        <div class="cell small-12 medium-12 align-center-middle text-center learMCont">
+            <button class="button learnM  align-center-middle text-center" id="learnM3" data-value="hm3" aria-label="view gallery button">
+                Explore More <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+</div>
+        
+        -->
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        
+        		<section class="grid-container home-services" id="services">
+    <h3 class="text-center section-title arapey-regular">Our Specialties</h2>
+
+    <div class="grid-x grid-margin-x align-center">
+
+        <!-- Pastries -->
+        <div class="cell small-12 medium-6 large-3 service-item text-center">
+            <img src="Files/img/dough3.jpg" alt="Delicious Pastries" class="service-img">
+            <h3>Pastries</h3>
+            <p class="speTexts scroll-animation">Freshly baked pastries, crafted with love to bring delight to every bite.</p>
+        </div>
+
+        <!-- Cakes -->
+        <div class="cell small-12 medium-6 large-3 service-item text-center">
+            <img src="Files/img/cake5.jpg" alt="Custom Cakes" class="service-img">
+            <h3>Cakes</h3>
+            <p class="speTexts scroll-animation">Custom cakes for all occasions, made with the finest ingredients.</p>
+        </div>
+
+        <!-- Continental Dishes -->
+        <div class="cell small-12 medium-6 large-3 service-item text-center">
+            <img src="Files/img/sauce2.jpg" alt="Continental Dishes" class="service-img">
+            <h3>Continental Dishes</h3>
+            <p class="speTexts scroll-animation">Enjoy globally inspired meals with rich flavors from around the world.</p>
+        </div>
+
+        <!-- African Dishes -->
+        <div class="cell small-12 medium-6 large-3 service-item text-center">
+            <img src="Files/img/fished3.jpg" alt="Traditional African Dishes" class="service-img">
+            <h3>African Dishes</h3>
+            <p class="speTexts scroll-animation">Authentic African delicacies, bringing home-cooked flavors to your plate.</p>
+        </div>
+
+        <!-- Event Planning -->
+        <!--   <div class="cell small-12 service-item text-center">
+            <img src="Files/img/event-planning.jpg" alt="Event Planning Services" class="service-img">
+            <h3>Event Planning</h3>
+            <p>Seamless event planning to make your special moments stress-free and unforgettable.</p>
+        </div>
+        -->
+
+    </div>
+</section>
+        
+        
+        
+        
+        
+       
+    </main>
+    
+    
+<footer class="grid-container">
+    
+    <!-- Logo & Business Name -->
+    <div class="grid-x grid-padding-x mnHead align-center-middle">
+        <div class="cell small-3 medium-2 large-3 medium-offset-3 mnIc">
+            <img src="Files/img/ic.png" alt="Lizzy's Logo" class="responsive-img ftImg">
+        </div>
+        <div class="cell small-8 medium-9 large-6 menuLogo">
+            <h4 class="menuLogoNm fraunces-sty medium-text-left large-text-left medium-offset-1" id="ftNm">LIZZY'S <span class="pacifico-regular" id="subMeNm">Unique Palate</span></h4>
+        </div>
+    </div>
+
+    <!-- Footer Bio -->
+    <div class="grid-x text-center footer-bio">
+        <div class="cell small-12 medium-10 large-8 medium-offset-1">
+            <p>
+                At **Lizzy’s Unique Palate**, we bring passion to the plate. Specializing in **pastries, cakes, continental, and African dishes**, we craft flavors that delight. From event planning to doorstep delivery, we ensure an unforgettable culinary experience. **Taste the difference today!**
+            </p>
+        </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="grid-x footLinks text-center">
+        <div class="cell small-6 medium-4">
+            <a href="index.html#services">Services</a>
+        </div>
+        <div class="cell small-6 medium-4" id="ftGaLnk">
+            <span>Gallery</span>
+        </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="grid-x text-center contact-section">
+        <div class="cell small-12">
+            <h2 class="contactHead">Contact Us</h2>
+        </div>
+        <div class="cell small-12">
+            <a href="https://wa.me/+2348130809201" class="contactAppIc" target="_blank" aria-label="Message us on WhatsApp">
+                <i class="fab fa-whatsapp"></i> <span class="nos">08130809201</span>
+            </a>
+        </div>
+        <div class="cell small-12">
+            <a href="tel:+2348130809201" class="contactAppIc" aria-label="Call us on 08130809201">
+                <i class="fas fa-phone"></i> <span class="nos">08130809201</span>
+            </a>
+        </div>
+        <div class="cell small-12">
+            <a href="mailto:enudolizzy@gmail.com" class="contactAppIc" aria-label="Email us">
+                <i class="fas fa-envelope"></i> <span class="nos">enudolizzy@gmail.com</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="grid-x align-center-middle social-icons text-center">
+        <div class="cell small-1">
+            <a href="https://vm.tiktok.com/ZMkGP4MXE/" target="_blank" aria-label="Follow us on TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+        <div class="cell small-1">
+            <a href="https://www.instagram.com/chef_lizzy_?igsh=MW11NHJkc3lxcGNqeg==" target="_blank" aria-label="Follow us on Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-center copyright">&copy; 2025 Lizzy's Unique Palate. All rights reserved.</p>
+
+</footer>
+
+
+
+
+		
+		
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/foundation-sites/dist/js/foundation.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/2.0.3/motion-ui.min.js"></script>
+<script>
+        $(document).foundation();
+    </script>
+
+<script>
+
+$('#contactModal').on('closed.zf.reveal', function () {
+    $(this).removeAttr('aria-hidden');
+});
+
+/*$('#contactModal').on('closed.zf.reveal', function () {
+    $(document).foundation();
+});
+*/
+document.getElementById('ftGaLnk').addEventListener('click', () => {
+    window.location.href="gallery.html";
+});
+</script>
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDNgc3ZuEu2TR-GH_wl0WflhTiXCdiiCko",
+    authDomain: "lizzys-unique-palate.firebaseapp.com",
+    projectId: "lizzys-unique-palate",
+    storageBucket: "lizzys-unique-palate.firebasestorage.app",
+    messagingSenderId: "1038151058195",
+    appId: "1:1038151058195:web:7225a1143412eeb5d910e6",
+    measurementId: "G-BR4X3GE058"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+		
+</body>
+</html>
