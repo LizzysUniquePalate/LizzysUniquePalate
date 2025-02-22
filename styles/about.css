@@ -1,0 +1,89 @@
+
+
+.abHi {
+  font-size: 3.1rem
+}
+.abTextCont {
+  position: relative;
+  z-index: -3
+}
+.abTexts {
+  font-size: 1.23rem;
+}
+.abTextImg {
+  border-radius: 25px
+}
+.orbit {
+  width: 340px
+}
+.obtCont{
+  border-radius: 20px;
+  height: 330px;
+width: 340px
+}
+.abtSldCont {
+  width: 100%;
+}
+.abSlImg {
+  border-radius: 20px;
+  height: 330px;
+  width: 100%
+}
+span.abtSldCtrl {
+  color: midnightblue;
+  font-weight: 800
+}
+
+
+.values-section {
+    padding: 50px 20px;
+    background: #f8f8f8;
+}
+.values-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+.values-section .cell {
+    padding: 20px;
+    text-align: center;
+}
+.values-section .icon {
+    font-size: 40px;
+    color: darkgoldenrod; /* Customize the color */
+    margin-bottom: 10px;
+}
+.values-section h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-family: "Arapey", serif;
+    font-weight: 800;
+    color: midnightblue;
+}
+.values-section p {
+    font-size: 1.03rem;
+    color: #555;
+    font-family: 'signika' , sans-serif;
+}
+.abtBtLink {
+  font-weight: 800;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  color: midnightblue;
+  border: 1px solid midnightblue;
+  background-color: transparent
+}
+.abtBtLink:active {
+  scale: 0.9;
+  color: #fff;
+  border-radius: 30px
+}
+.abtBtLink:hover {
+  background-color: midnightblue
+}
+
+
+
+
+
+

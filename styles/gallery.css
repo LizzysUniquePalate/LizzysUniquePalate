@@ -1,0 +1,99 @@
+
+
+.gImg {
+  margin-top: 1%;
+  border-radius: 20px;
+  margin-bottom: 8%;
+}
+#modalImage {
+  border-radius: 8px
+}
+
+.gSelectButton {
+  margin-left: 5%;
+  margin-top: 4%;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+#gMenuBt {
+    color: midnightblue;
+  border: 1px solid midnightblue
+}
+
+.dropdown-pane {
+  height: 50px;
+  width: 160px;
+  border-radius: 10px;
+  border: 1px solid
+}
+
+.gList li a {
+  font-size: 1.2rem;
+  color: midnightblue
+}
+.gSeT {
+  margin-top: 10%
+}
+
+#imageModal {
+  background-color: #fff
+}
+.gaReveal {
+  max-height: 100vh;
+  background-color: #fff;
+}
+.gaFulImg {
+  width: 100%;
+  height: auto
+}
+.gaImgGrid {
+  height: 70vh
+}
+.gaimgCell {
+  height: 70%
+}
+
+.gMeCtrlBt {
+  border-radius: 10px;
+  padding: 5px 5px;
+  border: 1px solid midnightblue;
+  margin-top: 8%
+}
+span.gMeCtrl {
+  color: midnightblue
+}
+span#gMePlCtrl:hover {
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
+}
+span#gMePaCtrl:hover {
+  transition: transform 0.3s ease;
+  transform: rotate(-180deg);
+}
+
+.close-button {
+  color: midnightblue;
+  font-size: 2.5rem
+}
+
+span.gModalCl {
+  font-weight: 700;
+  font-size: 2rem
+}
+
+.abtBtLink {
+   font-weight: 800;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  color: midnightblue;
+  border: 1px solid midnightblue;
+  background-color: transparent
+}
+.abtBtLink:active {
+  scale: 0.9;
+  color: #fff;
+  border-radius: 30px
+}
+.abtBtLink:hover {
+  background-color: midnightblue
+}
