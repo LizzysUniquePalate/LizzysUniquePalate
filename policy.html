@@ -24,13 +24,29 @@
   	 <link rel="icon" type="image/png" sizes="32x32" href="https://alabiohio.github.io/LizzysUniquePalate/Files/ic/favicon-32.png">
    <link rel="icon" type="image/png" sizes="192x192" href="https://alabiohio.github.io/LizzysUniquePalate/Files/ic/favicon-192.png">
    <link rel="apple-touch-icon" sizes="180x180" href="https://alabiohio.github.io/LizzysUniquePalate/Files/ic/apple-touch-icon.png">
+  
+  
+<!-- Theme Color -->
+<meta name="theme-color" content="#222">
+<meta name="background-color" content="#000">
+
+
+<!-- General Mobile Settings -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="192x192" href="https://alabiohio.github.io/LizzysUniquePalate/Files/ic/favicon-192.png">
+<link rel="apple-touch-icon" sizes="256x256" href="https://alabiohio.github.io/LizzysUniquePalate/Files/ic/favicon-256.png">
+<link rel="apple-touch-icon" sizes="512x512" href="https://alabiohio.github.io/LizzysUniquePalate/Files/ic/favicon-512.png">
 
   
    <style>
 		
     body {
-      background-color: rgba(0,51,101,0.1);
-      color: #4a2e2a;
+      color: #fff;
       padding-top: 2rem;
     }
 
@@ -51,7 +67,7 @@
     font-family: 'Goudy Bookletter 1911', serif;
 		}
     h1, h4 {
-      color: midnightblue;
+      color: cornflowerblue;
   }
 		p {
 				font-family: 'signika' , sans-serif;
@@ -60,7 +76,7 @@
 		}
 
     .privacy-container {
-      background: #fff;
+      background: #000;
       padding: 2rem;
       border-radius: 16px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -68,7 +84,7 @@
     }
 
     a {
-      color: navy;
+      color: cornflowerblue;
       font-weight: 700;
     }
 
@@ -84,14 +100,14 @@
         <div id="header"></div>
 
         <script>
-            fetch("http://127.0.0.1:8080/header.html")
+            fetch("https://alabiohio.github.io/LizzysUniquePalate/header.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById("header").innerHTML = data;
-                loadGalleryScript();
+                loadScript();
             });
 
-            function loadGalleryScript() {
+            function loadScript() {
                 let script = document.createElement("script");
                 script.src = "scripts/header.js";
                 script.defer = true;
@@ -101,10 +117,11 @@
         </script>
     </header>
 
-  <main class="grid-container">
+  <main class="grid-container" style="margin-top: 10%">
     <div class="grid-x grid-padding-x align-center">
       <div class="cell small-12 medium-10 large-8 privacy-container">
         <h1 class="text-center">Privacy Policy</h1>
+        <p style="color: cornflowerblue; font-weight: 800; font-style: 1.2rem;">Last updated: 11/04/2025</p>
         <p>This Privacy Policy outlines how <span class="highlight">Lizzy's Unique Palate</span> collects, uses, and protects your information when you use our website or services.</p>
 
         <h4>1. Information We Collect</h4>
@@ -139,7 +156,7 @@
     <script type="module" src="scripts/analytics.js"></script>
 
     <script>
-        fetch("http://127.0.0.1:8080/footer.html")
+        fetch("https://alabiohio.github.io/LizzysUniquePalate/footer.html")
         .then(res => res.text())
         .then(data => {
             document.getElementById("footer").innerHTML = data;

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <sitemap>
+    <loc>https://lizzysuniquepalate.42web.io/sitemap-home.xml</loc>
+    <lastmod>2025-04-15T09:10:00+01:00</lastmod>
+  </sitemap>
+
+  <sitemap>
+    <loc>https://lizzysuniquepalate.42web.io/sitemap-gallery.xml</loc>
+    <lastmod>2025-04-15T09:11:00+01:00</lastmod>
+  </sitemap>
+
+  <sitemap>
+    <loc>https://lizzysuniquepalate.42web.io/sitemap-about.xml</loc>
+    <lastmod>2025-04-12T09:09:00+01:00</lastmod>
+  </sitemap>
+
+  <sitemap>
+    <loc>https://lizzysuniquepalate.42web.io/sitemap-contact.xml</loc>
+    <lastmod>2025-04-15T09:09:00+01:00</lastmod>
+  </sitemap>
+
+  <sitemap>
+    <loc>https://lizzysuniquepalate.42web.io/sitemap-terms.xml</loc>
+    <lastmod>2025-04-15T09:09:00+01:00</lastmod>
+  </sitemap>
+
+  <sitemap>
+    <loc>https://lizzysuniquepalate.42web.io/sitemap-policy.xml</loc>
+    <lastmod>2025-04-11T09:11:00+01:00</lastmod>
+  </sitemap>
+
+</sitemapindex>

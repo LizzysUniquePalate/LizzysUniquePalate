@@ -6,228 +6,153 @@
 		  <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A feast for the eyes! Explore our gallery of beautifully crafted pastries, elegant cakes, and mouthwatering dishes. Each creation tells a story of passion, flavor, and artistry.">
     <meta name="author" content="Ohio">
-    <title>Lizzy's Unique Palate's Product Image Gallery</title>
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="food gallery, cake designs, pastry photos, African dishes images, continental meals pictures, catering portfolio, Lizzy's Unique Palate food showcase, best cake designs, custom cakes gallery, bakery showcase">
+    <title>Lizzy's Unique Palate Gallery</title>
+    
 		
 	  	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites/dist/css/foundation.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">       
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/2.0.3/motion-ui.min.css">
-
- 		
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">    
     <link rel="stylesheet" href="styles/style.css"/>
     <link rel="stylesheet" href="styles/gallery.css"/>
+	 	<link rel="preconnect" href="https://fonts.gstatic.com">	
     
-		
-	 	<link rel="preconnect" href="https://fonts.gstatic.com">		
-	 	<link rel="icon" href="ic.png" type="image/x-icon">
-    
-    <script src="scripts/gallery.js" defer></script>
-     <script type="module" src="scripts/analytics.js" defer></script>
+    <!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lizzysuniquepalate.42web.io/gallery.html">
+<meta property="og:title" content="Gallery - Lizzy’s Unique Palate">
+<meta property="og:description" content="Explore our gallery of beautifully crafted pastries, cakes, and continental dishes. Every bite tells a story.">
+<meta property="og:image" content="https://alabiohio.github.io/LizzysUniquePalate/Files/img/cake9.jpg">
 
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://lizzysuniquepalate.42web.io/gallery.html">
+<meta name="twitter:title" content="Gallery - Lizzy’s Unique Palate">
+<meta name="twitter:description" content="Explore our gallery of beautifully crafted pastries, cakes, and continental dishes. Every bite tells a story.">
+<meta name="twitter:image" content="https://alabiohio.github.io/LizzysUniquePalate/Files/img/chicken2.jpg">
+    
+	  <link rel="icon" type="image/png" sizes="32x32" href="https://alabiohio.github.io/LizzysUniquePalate/Files/ic/favicon-32.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="https://alabiohio.github.io/LizzysUniquePalate/Files/ic/favicon-192.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="https://alabiohio.github.io/LizzysUniquePalate/Files/ic/apple-touch-icon.png">
+    
+       <script type="module" src="scripts/analytics.js" defer></script>
+    
+<!-- Theme Color -->
+<meta name="theme-color" content="#222">
+<meta name="background-color" content="#000">
+
+
+<!-- General Mobile Settings -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="192x192" href="https://alabiohio.github.io/LizzysUniquePalate/Files/ic/favicon-192.png">
+<link rel="apple-touch-icon" sizes="256x256" href="https://alabiohio.github.io/LizzysUniquePalate/Files/ic/favicon-256.png">
+<link rel="apple-touch-icon" sizes="512x512" href="https://alabiohio.github.io/LizzysUniquePalate/Files/ic/favicon-512.png">
+
+    <style>
+    #headGalLnk a {
+        color: midnightblue;       
+        font-size: 1.5rem;
+        padding: 0px 45px;
+        border-bottom: 1px solid;       
+        border-radius: 10px;
+        font-weight: 800;
+        box-shadow: 0px 0px 2px #000;
+        background-color: paleturquoise;
+    }
+   .lgScrMenu li:nth-child(3) a {
+      color: midnightblue;
+      background-color: paleturquoise;      
+      border: 1px solid midnightblue;
+      border-radius: 25px;
+}
+    img {
+        transition: 0.3s ease;
+    }
+    img:hover {
+        transform: scale(1.1);
+        transition: 0.3s ease;
+        box-shadow: 0px 0px 3px #000;
+    }
+    </style>
 
 </head>
 <body>
+
+    <header>
+  <div id="header"></div>
+
+  <script>
+    fetch("https://alabiohio.github.io/LizzysUniquePalate/header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+          loadScript();
+      });
+
+function loadScript() {
+    let script = document.createElement("script");
+    script.src = "scripts/header.js";  
+    script.defer = true;
+    document.body.appendChild(script);
+}
+
+  </script>
+    </header>
     
     
-		<div class="grid-container">
+		<main class="grid-container">
 		    
 		   <button class="button hollow gSelectButton" id="gMenuBt" data-toggle="myDropdown" aria-label="Menu To View videos" aria-expanded="false"> 
 		       <span class="material-symbols-outlined gSmenu" id="gSmenuIc">&#xe5d2</span>
 </button>
-									<div class="dropdown-pane" id="myDropdown" data-dropdown data-auto-focus="true">
-									   <ul class="no-bullet gList">
-									      <li>
-									       <a href="https://www.instagram.com/chef_lizzy_?igsh=MW11NHJkc3lxcGNqeg==" class="cell shrink contactAppIc" target="_blank" aria-label="Open Instagram For Videos"><i class="fab fa-instagram"></i> Videos</a>
-									     </li>
-									 </ul>
+									<div class="dropdown-pane align-middle text-center" id="myDropdown" data-dropdown data-auto-focus="true">
+									       <a href="https://vm.tiktok.com/ZMkGP4MXE/" class="cell shrink contactAppIc" target="_blank" aria-label="Follow us on tiktok"><i class="fab fa-tiktok"></i> Videos</a>									    								   
    </div>
 		    
-		    <!-- \\\\\\\////////\\\\\\//// -->
-		    <div class="grid-x gImgCont" id="imageGallery"></div>
+		        <div class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-4" id="imageGallery">
+		            <div class="grid align-middle text-center" id="spinnerLoad">
+<l-ring 
+  size="60"
+  stroke="5"
+  bg-opacity="0"
+  speed="1.5"
+  color="lightblue" 
+></l-ring>
+		            </div>
+		        </div>
     
-		    
-		    
-<!-- Image Viewer Modal -->
-<div class="reveal align-center-middle" id="imageModal" data-reveal  data-animation-in="hinge-in-from-top" data-animation-out="fade-out">
-    <div class="grid-x gaImgGrid">
-        <div class="cell gaimgCell">
-    <img class="responsive-img gaFulImg" id="modalImage" src="" alt="Full Image">
-        </div>
-    </div>
-    
-  <div class="grid-x">
-      <div class="cell small-4">
-       <button id="prevImg" class="button hollow gMeCtrlBt" aria-label="Previous Image">
-        <span class="material-symbols-outlined gMeCtrl" id="gMePreCtrl">&#xe5cb</span>
-      </button>
-    </div>
+		</main>
         
-    <div class="cell small-4 align-center-middle text-center">
-        <button id="toggleCarousel" class="button hollow gMeCtrlBt" aria-label="Slideshow">
-            <span class="material-symbols-outlined gMeCtrl" id="gMePlCtrl">&#xe037</span>
-        </button>
-    </div>
+        <footer class="grid-container" id="footer"></footer>
+          
+  <script>
+    fetch("https://alabiohio.github.io/LizzysUniquePalate/footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;          
+      });
+    </script>
         
-    <div class="cell small-4 align-center-middle text-right">
-    <button id="nextImg" class="button hollow gMeCtrlBt" aria-label="Next Image">
-        <span class="material-symbols-outlined gMeCtrl" id="gMeNxtCtrl">&#xe5cc</span>
-    </button>
-    </div>
-    </div>
-    
-  <button class="close-button" data-close aria-label="close fullscreen picture">
-      <span class="material-symbols-outlined gModalCl" id="gSmodalCls">&#xe5cd</span>
-  </button>
-</div>
-    
-    
-    
-		    <div class="cell small-12 medium-12 align-center-middle text-center">
-   							 <button class="button abtBtLink" id="abtBtnLk" aria-label="Contact Us" data-open="contactModal">
-         				 <i class="fas fa-envelope"></i> Contact Us<!-- Use any icon you prefer -->
-        						 </button>
-						</div>
-    
-		</div>
-    
-    
-    <!-- CONTACT MODAL -->
-    
-     <div class="revealCt medium-12" id="contactModal" data-reveal data-animation-in="slide-in-left" data-animation-out="slide-out-left">
-     
-       <div class="cell">
-     <h1 class="text-center goudy-bookletter-1911-regular ctHi">Contact Us</h1>
-     </div>
-    
-     <div class="grid-container modal-content align-center-middle text-center">
-         
-                
-         <div class="grid-x align-center-middle text-center ctMsgCont">
-             <div class="cell small-12 ctMsg">
-                 <h2 class="ctHii">Message Us</h2>
-            <a href="https://wa.me/+2348130809201" class="cell shrink contactAppIc" target="_blank" aria-label="Message us on whatsapp"><i class="fab fa-whatsapp" id="ctWhatsapp"></i> <span class="ctNos">08130809201</span></a>                 
-            		 <div class="cell small-12 align-center-middle text-center ctMail">                
-  																		<a href="mailto:enudolizzy@gmail.com" class="align-center-middle gmail-button" aria-label="Send a message on Gmail">
-   														     <i class="fas fa-envelope" id="ctMails"></i> <span>enudolizzy@gmail.com</span>
-																				    </a>
-																										</div>
-             </div>
-             
-               <div class="cell ctMsg">
-             <h2 class="ctHii">Call Us</h2>
-             <p>
-                 <div class="cell">
-            									<a href="tel:+234 813 080 9201" class="cell shrink contactAppIc" aria-label="Call us on 08130809201"><i class="fas fa-phone" id="ctPhone"></i> <span class="ctNos">08130809201</span></a>
-       											   </div> 
-             </p>
-         </div>
-             
-                          
-             <div class="cell small-12 ctMsg">
-                 <h2 class="ctHii">Follow Us</h2>
-                 <a href="https://vm.tiktok.com/ZMkGP4MXE/" class="cell shrink ctAppIc" target="_blank" aria-label="Follow us on tiktok" id="ctAppIci"><i class="fab fa-tiktok" id="ctTiktok"></i> @cheflizzy0</a><br>
-                 <a href="https://www.instagram.com/chef_lizzy_?igsh=MW11NHJkc3lxcGNqeg==" class="cell shrink ctAppIc" target="_blank" id="ctAppIcii" aria-label="Follow us on instagram"><i class="fab fa-instagram" id="ctInstagram"></i> chef_lizzy_</a>
-             </div>
-         </div>
-         
-     </div>
-    <button class="close-button" data-close>
-        <span class="material-symbols-outlined ctClrIc" id="ctClearIc">&#xe5cd</span>
-    </button>
-</div>
-    
-    
-    
-    
-    <footer class="grid-container">
-    
-    <!-- Logo & Business Name -->
-    <div class="grid-x grid-padding-x mnHead align-center-middle">
-        <div class="cell small-3 medium-2 large-3 medium-offset-3 mnIc">
-            <img src="Files/img/ic.png" alt="Lizzy's Logo" class="responsive-img ftImg">
-        </div>
-        <div class="cell small-8 medium-9 large-6 menuLogo">
-            <h4 class="menuLogoNm fraunces-sty medium-text-left large-text-left medium-offset-1" id="ftNm">LIZZY'S <span class="pacifico-regular" id="subMeNm">Unique Palate</span></h4>
-        </div>
-    </div>
-
-    <!-- Footer Bio -->
-    <div class="grid-x text-center footer-bio">
-        <div class="cell small-12 medium-10 large-8 medium-offset-1">
-            <p>
-                At **Lizzy’s Unique Palate**, we bring passion to the plate. Specializing in **pastries, cakes, continental, and African dishes**, we craft flavors that delight. From event planning to doorstep delivery, we ensure an unforgettable culinary experience. **Taste the difference today!**
-            </p>
-        </div>
-    </div>
-
-    <!-- Quick Links -->
-    <div class="grid-x footLinks text-center">
-        <div class="cell small-6 medium-4">
-            <a href="index.html#services">Services</a>
-        </div>
-        <div class="cell small-6 medium-4" id="ftGaLnk">
-            <span>Gallery</span>
-        </div>
-    </div>
-
-    <!-- Contact Information -->
-    <div class="grid-x text-center contact-section">
-        <div class="cell small-12">
-            <h2 class="contactHead">Contact Us</h2>
-        </div>
-        <div class="cell small-12">
-            <a href="https://wa.me/+2348130809201" class="contactAppIc" target="_blank" aria-label="Message us on WhatsApp">
-                <i class="fab fa-whatsapp"></i> <span class="nos">08130809201</span>
-            </a>
-        </div>
-        <div class="cell small-12">
-            <a href="tel:+2348130809201" class="contactAppIc" aria-label="Call us on 08130809201">
-                <i class="fas fa-phone"></i> <span class="nos">08130809201</span>
-            </a>
-        </div>
-        <div class="cell small-12">
-            <a href="mailto:enudolizzy@gmail.com" class="contactAppIc" aria-label="Email us">
-                <i class="fas fa-envelope"></i> <span class="nos">enudolizzy@gmail.com</span>
-            </a>
-        </div>
-    </div>
-
-    <!-- Social Media Links -->
-    <div class="grid-x align-center-middle social-icons text-center">
-        <div class="cell small-1">
-            <a href="https://vm.tiktok.com/ZMkGP4MXE/" target="_blank" aria-label="Follow us on TikTok">
-                <i class="fab fa-tiktok"></i>
-            </a>
-        </div>
-        <div class="cell small-1">
-            <a href="https://www.instagram.com/chef_lizzy_?igsh=MW11NHJkc3lxcGNqeg==" target="_blank" aria-label="Follow us on Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Copyright -->
-    <p class="text-center copyright">&copy; 2025 Lizzy's Unique Palate. All rights reserved.</p>
-
-</footer>
-    
-    
-    
-    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-       <script src="https://cdn.jsdelivr.net/npm/foundation-sites/dist/js/foundation.min.js"></script>
-      <!-- Motion UI JS -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/2.0.3/motion-ui.min.js"></script>
-		
-    <script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/js/foundation.min.js" crossorigin="anonymous"></script> 
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/ring.js"></script>
+      <script src="scripts/gallery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+		      <script>
         $(document).foundation();
     </script>
-
-    
-    
-    
-    
+<script>
+    lightbox.option({
+        disableScrolling: true
+    });
+</script>
     
 </body>
 </html>
