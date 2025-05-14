@@ -1,70 +1,78 @@
-.hero-section {
-    background-image: url("https://alabiohio.github.io/LizzysUniquePalate/Files/img/snack1.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 490px;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15%;
+.hmImgHd {
+  margin-top: 6rem
 }
+.hmImgHd img {
+  border-radius: 50px 0px 50px 0px;
+  margin-top: 2rem;
+}
+.hmImgHd .cell:nth-child(2n) img {
+  border-radius: 0px 50px 0px 50px;
+}
+
 .imgText {
   font-size: 3rem;
   color: aliceblue
 }
 
 .welcomeCont {
-  margin-bottom: 10%
+  margin-bottom: 10%;
+  background-image: url("https://alabiohio.github.io/LizzysUniquePalate/Files/img/dough1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: text;
+  align-content: center;
 }
 #welcomeText {
   margin-bottom: 20%;
-  color: dimgray;
+  color: transparent;
+  font-weight: 800;
+  -webkit-text-stroke: 0.25px cornflowerblue;
 }
 
 .hds {
-  font-size: 3rem;
-  color: #444
+    font-size: 3rem;
+    color: lightskyblue;
+    font-size: 800;
 }
 .learnM {
-  border-radius: 15px;
+  border-radius: 50px;
   font-size: 1.2rem;
-  font-weight: 700;
-  border-color: midnightblue;
-  color: midnightblue;
-  background-color: transparent;
+  border: 1.25px solid cornflowerblue;
+  color: aliceblue;
+  background-color: rgba(0, 55, 106, 0.5);
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 800;
+  font-style: normal;
+  transition: all 0.3s ease;
 }
 .learnM:active {
-  scale: 0.9;
+  transform: scale(0.9);
   color: #fff;
-  border-radius: 30px
+  border-radius: 30px;
+  background-color: rgba(0, 55, 106, 0.8);
 }
+
 .learnM:hover {
-  background-color: midnightblue
+  color: aliceblue;
+  background-color: rgba(0, 55, 106, 1);
+  transform: scale(0.9);
 }
-
-
 
 .textCont {
-  display: inline-block;
   text-align: center;
   font-size: 1.2rem;
-  position: relative;
-  z-index: -3;
   font-family: 'signika' , sans-serif;
 }
 .textInfo {
-  animation: swipeIn 1s forwards
+    color: #fff;
+    font-size: 1.05rem;
 }
-/*@keyframes swipeIn {
-  from {transform: translateX(-35%)}
-  to {transform: translateX(0)}
-}*/
+
 .imgz {
-  border-radius: 90px
+  border-radius: 90px;
+  box-shadow: 0px 0px 3px #000;
 }
+
 .foodImg {
   margin-bottom: 5%;
 }
@@ -73,14 +81,20 @@
 
 /* SERVICES */
 .home-services {
-    padding: 40px 20px;
+  padding: 40px 20px;
+  background-image: url("https://alabiohio.github.io/LizzysUniquePalate/Files/bgs/lnBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-blend-mode: multiply;
+  background-color: rgba(0,0,0,0.5)
 }
 
 .section-title {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #333
+    color: cornflowerblue
 }
 
 .service-item {
@@ -88,32 +102,22 @@
 }
 
 .service-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 80px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 3px #000;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 5px;
-      font-family: "Fraunces", serif;
+    font-family: "Fraunces", serif;
+    color: aqua;
+    font-weight: 700;
 }
 
 .service-item p {
-    color: #555;
+    color: #fff;
     font-family: 'signika' , sans-serif;
-    font-size: 1rem
 }
-
-
-
-
-
-
-
-
-
-
-
-
