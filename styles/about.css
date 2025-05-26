@@ -1,6 +1,7 @@
 .abHi {
   font-size: 3.1rem;
-  margin-top: 20%
+  margin-top: 20%;
+  color: cornflowerblue;
 }
 .abTextCont {
   margin-top: 7%
@@ -9,7 +10,7 @@
 .abTexts {
   font-size: 1.1rem;
   color: whitesmoke;
-  text-align: center
+  text-align: justify
 }
 .abTextImg {
   border-radius: 25px
@@ -93,7 +94,11 @@
   background-color: midnightblue
 }
 
-
+@media (max-width: 480px) {
+  #chefImg {
+    margin-left: 2.6rem;
+    }
+}
 
 
 
