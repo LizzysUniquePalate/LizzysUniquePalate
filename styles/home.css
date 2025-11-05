@@ -1,13 +1,47 @@
-.hmImgHd {
-  margin-top: 6rem
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://lizzysuniquepalate.vercel.app/Files/img/dough2.jpg") center/cover no-repeat;
+  height: 90vh;
 }
-.hmImgHd img {
-  border-radius: 50px 0px 50px 0px;
-  margin-top: 2rem;
+
+
+.hero-title {
+  color: #74bcff;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
-.hmImgHd .cell:nth-child(2n) img {
-  border-radius: 0px 50px 0px 50px;
+
+.hero-subtitle {
+  color: #dadada;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.25rem;
+  font-family: 'signika', sans-serif;
+  font-style: normal
 }
+
+
+.hero-btn {
+  background-color: #f5b971;
+  color: #2e1b02;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+  font-weight: 600;
+  font-family: 'signika', sans-serif;
+  font-style: normal
+}
+
+.hero-btn:hover {
+  background-color: #00376a;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
 
 .imgText {
   font-size: 3rem;
@@ -16,12 +50,13 @@
 
 .welcomeCont {
   margin-bottom: 10%;
-  background-image: url("https://alabiohio.github.io/LizzysUniquePalate/Files/img/dough1.jpg");
+  background-image: url("https://lizzysuniquepalate.vercel.app/Files/img/dough1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: text;
   align-content: center;
 }
+
 #welcomeText {
   margin-bottom: 20%;
   color: transparent;
@@ -29,43 +64,52 @@
   -webkit-text-stroke: 0.25px cornflowerblue;
 }
 
+
 .hds {
-    font-size: 3rem;
-    color: lightskyblue;
-    font-size: 800;
+  font-size: 2.5rem;
+  color: lightskyblue;
+  font-size: 800;
 }
+
 .learnM {
   border-radius: 50px;
   font-size: 1.2rem;
-  border: 1.25px solid cornflowerblue;
-  color: aliceblue;
-  background-color: rgba(0, 55, 106, 0.5);
   font-family: "Goudy Bookletter 1911", serif;
   font-weight: 800;
   font-style: normal;
+  background-color: #b17d3e;
+  color: #462c25;
+  margin-top: 3rem;
   transition: all 0.3s ease;
-}
-.learnM:active {
-  transform: scale(0.9);
-  color: #fff;
-  border-radius: 30px;
-  background-color: rgba(0, 55, 106, 0.8);
 }
 
 .learnM:hover {
-  color: aliceblue;
-  background-color: rgba(0, 55, 106, 1);
-  transform: scale(0.9);
+  background-color: #3b2e2a;
+  color: #fff7f2;
+  transform: translateY(-3px);
 }
 
+
 .textCont {
-  text-align: center;
   font-size: 1.2rem;
-  font-family: 'signika' , sans-serif;
+  font-family: 'signika', sans-serif;
 }
+
+.secII,
+.secI {
+  overflow: hidden;
+  padding: 4rem 2rem;
+}
+
+.secII {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("http://127.0.0.1:5500/Files/bgs/bgii.jpeg") center/cover no-repeat;
+
+}
+
 .textInfo {
-    color: #fff;
-    font-size: 1.05rem;
+  color: #fff;
+  font-size: 1rem;
 }
 
 .imgz {
@@ -73,51 +117,298 @@
   box-shadow: 0px 0px 3px #000;
 }
 
-.foodImg {
-  margin-bottom: 5%;
+.sec {
+  background-color: rgba(0, 55, 106, 0.1);
 }
+
+
+
+
+
+
+
+.diamond-gallery {
+  background: transparent;
+  padding: 6rem 1rem;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  color: #3b2e2a;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: #6f4e37;
+  margin-bottom: 3.5rem;
+  font-size: 1.1rem;
+}
+
+.diamond-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  align-items: center;
+  transform: rotate(45deg);
+}
+
+.diamond-item {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 1rem;
+  transform: rotate(-45deg);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.diamond-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.diamond-item:hover {
+  transform: rotate(-45deg) scale(1.08);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.diamond-item:hover img {
+  transform: scale(1.1);
+}
+
+.diamond-item.large {
+  width: 230px;
+  height: 230px;
+}
+
+.diamond-item.medium {
+  width: 200px;
+  height: 200px;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 640px) {
+  .diamond-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    transform: rotate(0);
+  }
+
+  .diamond-item {
+    transform: rotate(0);
+    width: 150px;
+    height: 150px;
+  }
+
+  .diamond-item:hover {
+    transform: scale(1.05);
+  }
+}
+
 
 
 
 /* SERVICES */
+
 .home-services {
-  padding: 40px 20px;
-  background-image: url("https://alabiohio.github.io/LizzysUniquePalate/Files/bgs/lnBg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-blend-mode: multiply;
-  background-color: rgba(0,0,0,0.5)
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("http://127.0.0.1:5500/Files/bgs/bgiii.jpg") center/cover no-repeat;
+  overflow: hidden;
+  padding: 5rem 1rem;
 }
 
 .section-title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: cornflowerblue
+  font-size: 2.4rem;
+  color: cyan;
+  margin-bottom: 0.5rem;
 }
 
-.service-item {
-    padding: 15px;
+.section-subtitle {
+  color: rgb(125, 164, 236);
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.service-card {
+  background: transparent;
+  border-radius: 1rem;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.4s ease;
+  padding-bottom: 1.5rem;
+}
+
+.service-img-cont {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 3px solid #d2cfca;
 }
 
 .service-img {
   width: 100%;
-  height: auto;
-  border-radius: 80px;
-  margin-bottom: 10px;
-  box-shadow: 0px 0px 3px #000;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-h3 {
-    font-size: 1.6rem;
-    margin-bottom: 5px;
-    font-family: "Fraunces", serif;
-    color: aqua;
-    font-weight: 700;
+.service-card h3 {
+  margin-top: 1.2rem;
+  font-size: 1.3rem;
+  color: cyan;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+
 }
 
-.service-item p {
-    color: #fff;
-    font-family: 'signika' , sans-serif;
+.service-card p {
+  color: floralwhite;
+  font-size: 1rem;
+  padding: 0 1rem;
+  font-family: 'signika', sans-serif;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-card:hover .service-img {
+  transform: scale(1.08);
+}
+
+/* Golden glow hover */
+.service-card:hover {
+  border: 2px solid rgba(245, 185, 113, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .service-img {
+    height: 180px;
+  }
+
+  .service-card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+
+
+
+.contact-sec {
+  background: rgba(109, 53, 26, 0.397);
+  padding: 4rem 1.5rem;
+}
+
+.contact-form-container {
+  background: #86551eac;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  padding: 3rem 2rem;
+}
+
+.ctHiiPg {
+  color: #30c7b0;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-intro {
+  font-size: 1.1rem;
+  color: #938d88;
+  margin-bottom: 2rem;
+}
+
+.form-style label {
+  display: block;
+  text-align: left;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  color: #503322;
+}
+
+.form-style input,
+.form-style textarea {
+  width: 100%;
+  border: 1px solid #f2c59a;
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.form-style textarea {
+  resize: none;
+}
+
+.form-style input:focus,
+.form-style textarea:focus {
+  border-color: #c77b30;
+  box-shadow: 0 0 0 3px rgba(199, 123, 48, 0.2);
+}
+
+.sdMsg {
+  background-color: #c77b30;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.sdMsg:hover {
+  background-color: #b06629;
+  transform: translateY(-2px);
+}
+
+
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 5px;
+  /* scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  /* track color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffb347;
+  /* thumb color */
+  border-radius: 10px;
+  border: 1px solid #f0f0f0;
+  /* space effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff9500;
+  /* hover color */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffb347 #f0f0f0;
 }

@@ -3,15 +3,21 @@
   margin-top: 20%;
   color: cornflowerblue;
 }
-.abTextCont {
-  margin-top: 7%
+
+.sec {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://lizzysuniquepalate.vercel.app/Files/bgs/bgiv.jpg") center/cover no-repeat;
+
+  padding: 5rem 1rem;
 }
+
 
 .abTexts {
   font-size: 1.1rem;
   color: whitesmoke;
   text-align: justify
 }
+
 .abTextImg {
   border-radius: 25px
 }
@@ -21,17 +27,205 @@
   margin-bottom: 6%
 }
 
-.abtSldCtrl::after {
-  font-size: 1.3rem; 
-  color: darkslateblue;
-  font-weight: 800
+
+
+#orbitSec {
+  padding: 2rem;
 }
+
+
+.orbit {
+  max-width: 900px;
+  width: 100%;
+  margin: 3rem auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  height: 450px;
+}
+
+.orbit-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.orbit-previous,
+.orbit-next {
+  color: #a00;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.orbit-previous:hover,
+.orbit-next:hover {
+  background-color: #fff;
+  color: #800;
+}
+
+.orbit-bullets button {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #a00;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+}
+
+.orbit-bullets button.is-active {
+  background: #a00;
+}
+
+@media screen and (max-width: 767px) {
+  .orbit {
+    height: 300px;
+    margin: 1.5rem 0;
+    border-radius: 0;
+  }
+
+  .orbit-previous,
+  .orbit-next {
+    width: 35px;
+    height: 35px;
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+.abt-modern-section {
+  padding: 4rem 1.5rem;
+  background: linear-gradient(135deg, #130c05, #010b3c);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.image-stack {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-top {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  z-index: 2;
+  width: 80%;
+  transform: rotate(-3deg);
+}
+
+.image-bottom {
+  position: relative;
+  margin-top: 5rem;
+  width: 90%;
+  transform: rotate(3deg);
+}
+
+.abt-modern-img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.abt-modern-img:hover {
+  transform: scale(1.05);
+}
+
+.abt-modern-text {
+  padding: 2rem;
+}
+
+.abt-modern-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #d86f1c;
+  margin-bottom: 1rem;
+}
+
+.abt-modern-desc {
+  color: #b0b0b0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.abt-modern-btn {
+  background-color: #d86f1c;
+  color: white;
+  border-radius: 30px;
+  margin-top: 1rem;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.abt-modern-btn:hover {
+  background-color: #b25710;
+  transform: translateY(-3px);
+}
+
+/* ✅ Mobile & tablet adjustments */
+@media screen and (max-width: 768px) {
+  .image-stack {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-top,
+  .image-bottom {
+    position: relative;
+    transform: rotate(0);
+    margin: 0 0 1rem 0;
+    width: 85%;
+  }
+
+  .abt-modern-img {
+    width: 100%;
+    max-width: 320px;
+    /* ✅ prevents oversized images */
+  }
+
+  .abt-modern-section {
+    padding: 2rem 1rem;
+  }
+
+  .abt-modern-text {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .abt-modern-title {
+    font-size: 1.6rem;
+  }
+
+  .abt-modern-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .abt-modern-btn {
+    width: 80%;
+    margin: 1rem auto 0 auto;
+    display: block;
+  }
+}
+
+
 
 .values-section {
   padding: 50px 20px;
   background: #222;
   position: relative;
+  overflow: hidden;
 }
+
 .values-section::before,
 .values-section::after {
   content: "";
@@ -39,67 +233,116 @@
   top: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Ensures no interaction issues */
+  pointer-events: none;
+  /* Ensures no interaction issues */
 }
+
 .values-section::before {
   left: 0;
   background: linear-gradient(to top, #000 0%, transparent 15%);
 }
+
 .values-section::after {
   right: 0;
   background: linear-gradient(to bottom, #000 0%, transparent 15%);
 }
 
-.values-section h2 {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-    color: cornflowerblue;
-}
-.values-section .cell {
-    padding: 20px;
-    text-align: center;
-}
-.values-section .icon {
-    font-size: 40px;
-    color: darkgoldenrod; /* Customize the color */
-    margin-bottom: 10px;
-}
-.values-section h4 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    font-family: "Arapey", serif;
-    font-weight: 800;
-    color: cornflowerblue;
-}
-.values-section p {
-    font-size: 1.03rem;
-    color: lightgrey;
-    font-family: 'signika' , sans-serif;
-}
-.abtBtLink {
-  font-weight: 800;
+
+.values-section {
+  padding: 4rem 1.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://lizzysuniquepalate.vercel.app/Files/bgs/bgv.jpg") center/cover no-repeat;
+
   border-radius: 25px;
-  font-size: 1.2rem;
-  border: 1.25px solid cornflowerblue;
-  color: aliceblue;
-  background-color: rgba(0, 55, 106, 0.5);
-
-}
-.abtBtLink:active {
-  scale: 0.9;
-  color: #fff;
-  border-radius: 30px
-}
-.abtBtLink:hover {
-  background-color: midnightblue
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 480px) {
-  #chefImg {
-    margin-left: 2.6rem;
-    }
+.values-section h2 {
+  font-size: 2.8rem;
+  color: cornflowerblue;
+  margin-bottom: 2.5rem;
 }
 
+.values-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.value-card {
+  background: #3e2a00;
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  margin: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
 
+.value-icon {
+  font-size: 2.8rem;
+  color: #d86f1c;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.value-card:hover .value-icon {
+  transform: scale(1.1);
+  color: #b25710;
+}
+
+.value-card h4 {
+  font-weight: 600;
+  color: lightslategray;
+  margin-bottom: 0.8rem;
+}
+
+.value-card p {
+  color: #c4c4c4;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-family: 'signika', sans-serif;
+}
+
+.values-cta {
+  margin-top: 3rem;
+}
+
+.values-btn {
+  background-color: #d86f1c;
+  color: white;
+  border-radius: 30px;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.values-btn:hover {
+  background-color: #b25710;
+  transform: translateY(-3px);
+}
+
+/* 📱 Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .values-title {
+    font-size: 1.8rem;
+  }
+
+  .value-card {
+    margin: 0.8rem 0;
+    padding: 1.5rem;
+  }
+
+  .value-icon {
+    font-size: 2.2rem;
+  }
+
+  .values-btn {
+    width: 80%;
+    max-width: 280px;
+  }
+}
