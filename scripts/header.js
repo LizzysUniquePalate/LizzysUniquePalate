@@ -6,19 +6,19 @@ const menuBox = document.querySelector(".me_nu");
 
 
 if (menuButton) {
-menuButton.addEventListener("click", function () {
-    const expanded = menuButton.getAttribute("aria-expanded") === "true";
-    
-    if (!expanded) {
-        // Open Menu
-        openMenu();
-    } else {
-        // Close Menu
-        closeMenu();
-    }
-    
-});
-menuLay.addEventListener('click', closeMenu)
+    menuButton.addEventListener("click", function () {
+        const expanded = menuButton.getAttribute("aria-expanded") === "true";
+
+        if (!expanded) {
+            // Open Menu
+            openMenu();
+        } else {
+            // Close Menu
+            closeMenu();
+        }
+
+    });
+    menuLay.addEventListener('click', closeMenu)
 }
 
 function openMenu() {
@@ -26,15 +26,15 @@ function openMenu() {
     menuLay.style.display = "block"; // Ensure it's visible
     menuLay.classList.remove("closing");
     menuBox.classList.remove("closing");
-    
+
 
     // Apply the change class to trigger the fading animation
-    menuIc.classList.add("change");
+    menuButton.classList.add("change");
 
     // Change icon to 'close' (Unicode) after fading effect
     setTimeout(() => {
-        menuIc.innerHTML = "&#xe5cd";  // 'close' icon (Unicode)
-        menuIc.classList.remove("change"); // Remove change class to stop animation
+        menuButton.innerHTML = `<i class="fas fa-close menu" id="menuIc"></i>`;  // 'close' icon (Unicode)
+        menuButton.classList.remove("change"); // Remove change class to stop animation
     }, 300); // Match the duration of the fade-in/out animation
 
     // Add active class to play animations
@@ -52,12 +52,12 @@ function closeMenu() {
     menuBox.classList.add("closing");
 
     // Apply the change class to trigger the fading animation
-    menuIc.classList.add("change");
+    menuButton.classList.add("change");
 
     // Change icon back to 'menu' (Unicode) after fading effect
     setTimeout(() => {
-        menuIc.innerHTML = "&#xe5d2";  // 'menu' icon (Unicode)
-        menuIc.classList.remove("change"); // Remove change class to stop animation
+        menuButton.innerHTML = `<i class="fas fa-bars menu" id="menuIc"></i>`;  // 'menu' icon (Unicode)
+        menuButton.classList.remove("change"); // Remove change class to stop animation
     }, 300); // Match the duration of the fade-in/out animation
 
     // Hide after animation ends
@@ -68,6 +68,14 @@ function closeMenu() {
     }, { once: true }); // Runs only once to prevent conflicts
 }
 
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
 
 
 
