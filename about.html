@@ -14,11 +14,11 @@
   <title>Our Values and Mission</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/css/foundation.css">
   <link rel="stylesheet" href="styles/css/app.css">
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="stylesheet" href="styles/about.css" />
+  <link href="assets/aos-master/dist/aos.css" rel="stylesheet">
 
 
   <meta property="og:type" content="website">
@@ -301,11 +301,12 @@
     });
   </script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="assets/aos-master/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
   </script>
-
 </body>
 
 </html>
